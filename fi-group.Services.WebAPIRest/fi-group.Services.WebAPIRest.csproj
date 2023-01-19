@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>fi_group.Services.WebAPIRest</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fi-group.Application.DTO\fi-group.Application.DTO.csproj" />
+    <ProjectReference Include="..\fi-group.Application.Interface\fi-group.Application.Interface.csproj" />
+    <ProjectReference Include="..\fi-group.Application.Main\fi-group.Application.Main.csproj" />
+    <ProjectReference Include="..\fi-group.Domain.Core\fi-group.Domain.Core.csproj" />
+    <ProjectReference Include="..\fi-group.Domain.Entity\fi-group.Domain.Entity.csproj" />
+    <ProjectReference Include="..\fi-group.Domain.Interface\fi-group.Domain.Interface.csproj" />
+    <ProjectReference Include="..\fi-group.InfraStructure.Interface\fi-group.InfraStructure.Interface.csproj" />
+    <ProjectReference Include="..\fi-group.InfraStructure.Repository\fi-group.InfraStructure.Repository.csproj" />
+    <ProjectReference Include="..\fi-group.Transversal.Logging\fi-group.Transversal.Logging.csproj" />
+    <ProjectReference Include="..\fi-group.Transversal.Mapper\fi-group.Transversal.Mapper.csproj" />
+    <ProjectReference Include="..\i-group.Transversal.Common\i-group.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>

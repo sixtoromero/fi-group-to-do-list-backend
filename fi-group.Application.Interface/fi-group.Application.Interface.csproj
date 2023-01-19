@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>fi_group.Application.Interface</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fi-group.Application.DTO\fi-group.Application.DTO.csproj" />
+    <ProjectReference Include="..\i-group.Transversal.Common\i-group.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>

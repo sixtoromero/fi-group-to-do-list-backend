@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>fi_group.Transversal.Mapper</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fi-group.Application.DTO\fi-group.Application.DTO.csproj" />
+    <ProjectReference Include="..\fi-group.Domain.Entity\fi-group.Domain.Entity.csproj" />
+  </ItemGroup>
+
+</Project>
